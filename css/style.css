@@ -1,7 +1,8 @@
 body {
     background-color: rgb(153, 149, 149);
     color: white;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
 }
 
 header {
@@ -11,10 +12,15 @@ border-radius: 5px;
 margin: 5px 5px 5px 0;
 }
 
+aside {
+    background-color: rgb(31, 92, 161);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+}
+
 div {
     background-color: rgb(52, 151, 93);
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
     border-radius: 5px;
     margin: 5px 5px 5px 0;
@@ -23,18 +29,8 @@ div {
 article {
     background-color: rgb(151, 7, 55);
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    border: 10px;
     border-radius: 5px;
-}
-
-aside {
-    background-color: rgb(31, 92, 161);
-    padding: 1rem;
-    border-radius: 5px;
-    margin: 5px 5px 5px 0;
 }
 
 footer {
@@ -42,4 +38,15 @@ footer {
     padding: 1rem;    
     border-radius: 5px;
     margin: 5px 5px 5px 0;
+}
+
+@media screen and (min-width: 481px ) {
+   .flex-left {
+    flex: 50%;
+   }
+
+   .flex-right {
+    flex: 50%;
+   }
+    
 }

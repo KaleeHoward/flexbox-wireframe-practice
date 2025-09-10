@@ -1,6 +1,7 @@
 body {
     background-color: rgb(153, 149, 149);
     color: white;
+    min-height: 100vh;
 }
 
 header {

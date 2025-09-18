@@ -19,7 +19,7 @@ aside {
     margin: 5px 5px 5px 0;
 }
 
-div {
+.container {
     background-color: rgb(52, 151, 93);
     padding: 1rem;
     border-radius: 5px;
@@ -30,7 +30,7 @@ article {
     background-color: rgb(151, 7, 55);
     padding: 1rem;
     border: 10px;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 0;
 }
 
 footer {
@@ -41,12 +41,15 @@ footer {
 }
 
 @media screen and (min-width: 481px ) {
-   .flex-left {
-    flex: 50%;
-   }
+ .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+ }
 
-   .flex-right {
-    flex: 50%;
-   }
+ aside {
+    width: 50%;
+ }
     
 }

@@ -17,20 +17,35 @@ aside {
     padding: 1rem;
     border-radius: 5px;
     margin: 5px 5px 5px 0;
+    align-items: flex-start;
+    flex-grow: 1;
 }
 
-.container {
+.flex-container {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.flex-right {
     background-color: rgb(52, 151, 93);
     padding: 1rem;
     border-radius: 5px;
     margin: 5px 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
 }
 
 article {
     background-color: rgb(151, 7, 55);
-    padding: 1rem;
+    padding: 2rem;
     border: 10px;
-    border-radius: 5px 5px 5px 0;
+    border-radius: 10px 10px 10px;
+    display: flex;
+    align-content: stretch;    
 }
 
 footer {
@@ -43,11 +58,10 @@ footer {
 @media screen and (min-width: 481px) {
  aside {
     flex-direction: row-reverse;
-    align-items: stretch;
  }
- 
- .container {
-    flex-direction: row-reverse;
+
+ .flex-container {
+    flex-direction: row;
  }
     
 }

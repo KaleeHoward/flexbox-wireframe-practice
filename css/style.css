@@ -2,7 +2,7 @@ body {
     background-color: rgb(153, 149, 149);
     color: white;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 header {
@@ -40,16 +40,14 @@ footer {
     margin: 5px 5px 5px 0;
 }
 
-@media screen and (min-width: 481px ) {
- .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media screen and (min-width: 481px) {
+ aside {
+    flex-direction: row-reverse;
     align-items: stretch;
  }
-
- aside {
-    width: 50%;
+ 
+ .container {
+    flex-direction: row-reverse;
  }
     
 }
